@@ -1,5 +1,5 @@
 # build site
-sass /sass/main.sass styles.css;
+sass ../sass/main.sass ../styles.css;
 mkdir output;
 
 git config --global user.email 'gagemorgan@outlook.com';
