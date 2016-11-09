@@ -5,4 +5,4 @@ before_script:
   - gem install sass slim
 
 script:
-  - sh /tests/publish.sh
+  - sh tests/publish.sh
