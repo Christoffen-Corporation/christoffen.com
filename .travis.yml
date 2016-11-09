@@ -1,0 +1,8 @@
+# .travis.yml
+sudo: false
+
+before_script:
+  - gem install sass slim
+
+script:
+  - sh publish.sh
