@@ -1,5 +1,2 @@
 script:
-- "test/travis.rb"
-
-before_install:
-- gem install sass slim
+ - "test/travis.sh"
