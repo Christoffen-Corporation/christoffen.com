@@ -1,0 +1,39 @@
+
+=keyframes($one, $two, $three, $four, $five, $six)
+   0% 
+      transform: translateY($one)
+   50%
+      transform: translateY($two)
+   65%
+      transform: translateY($three)
+   80%
+      transform: translateY($four)
+   95%
+      transform: translateY($five)	
+   100% 
+      transform: translateY($six)
+
+=webkit-keyframes($one, $two, $three, $four, $five, $six)
+   0% 
+      -webkit-transform: translateY($one)
+   50%
+      -webkit-transform: translateY($two)	
+   65%
+      -webkit-transform: translateY($three)
+   80%
+      -webkit-transform: translateY($four)
+   95%
+      -webkit-transform: translateY($five)		
+   100% 
+      -webkit-transform: translateY($six)
+
+=fadein($seconds)
+   -webkit-animation: fadein $seconds
+   -moz-animation: fadein $seconds
+   -ms-animation: fadein $seconds
+   -o-animation: fadein $seconds
+   animation: fadein $seconds 
+
+=padding($left, $right)
+   padding-left: 100px
+   padding-right: 100px
