@@ -1,10 +1,5 @@
 script:
 - "test/travis.rb"
 
-language: sass
 before_install:
-- gem install sass
-
-language: slim
-before_install:
-- gem install slim
+- gem install sass slim
