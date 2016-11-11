@@ -1,11 +1,20 @@
 doctype html
 html lang="en-us"
-head
-  title
-    | Christoffen Corporation
-  meta charset="utf-8"
-  meta(name="viewport" 
-    content="width=device-width, initial-scale=1")
+  head
+    title
+      | Christoffen Corporation
+    meta charset="utf-8"
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    script(src="https://code.jquery.com/jquery-3.1.0.min.js")
+    script(src="/test.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous")
+    script(async defer src="https://buttons.github.io/buttons.js")
+    link(href="styles.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Martel+Sans:900" rel="stylesheet")
+  #fb-root
   javascript:
     (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -15,9 +24,97 @@ head
     fjs.parentNode.insertBefore(js, fjs);
     }(document, "script", "facebook-jssdk"));
 
-body(data-spy="scroll" 
-  data-target=".navbar" 
-  data-offset="50")
+  body(data-spy="scroll" data-target=".navbar" data-offset="50")
+    nav.navbar.navbar-dark.bg-inverse.navbar-fixed-top
+      .container-fluid
+        #logo.navbar-header.slideDown 
+          img(alt="Christoffen Corporation" src="img/crstfn-color.png")
+          | H R I S T O F F E N &nbsp;&nbsp;&nbsp;&nbsp;
+        .nav.navbar-nav
+          a(href="https://github.com/Christoffen-Corporation")
+            img(style="position: absolute; top: 0; right: 0; border: 0;" 
+              src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" 
+              alt="Fork me on GitHub" 
+              data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png")
+    br
+    br
+  
+    #TopCarousel.carousel.slide.slideDown(data-ride="carousel")
+      ol.carousel-indicators
+        li.active(data-target="#TopCarousel" data-slide-to="0")
 
+      .carousel-inner(role="listbox")
+          .carousel-item.active.slideDown
+            center
+              br
+              img.carousel.slideStyles(src="img/slide3.png")
+              br
+              br
 
+          .carousel-item.slideDown
+            center
+              br 
+              img.carousel.slideStyles(src="img/slide2.png") 
+              br
+              br
 
+          #yea.carousel-item.slideDown 
+            br
+            img.carousel.slideStyles(src="img/yea3.jpg" align="right")
+            br
+            br
+            h2
+              | We'll be there
+            h3 
+              | Wish us luck
+            br
+            br
+            br
+            br
+
+      a.left.carousel-control(href="#TopCarousel" role="button" data-slide="prev")
+          span.icon-prev(aria-hidden="true")
+          span.sr-only 
+            | Previous 
+
+      a.right.carousel-control(href="#TopCarousel" role="button" data-slide="next")
+          span.icon-next(aria-hidden="true")
+          span.sr-only 
+            | Next
+  
+    #Start.page-header 
+      br
+      h1
+        | &nbsp;&nbsp;&nbsp;&nbsp; Start &nbsp;
+
+    center
+      .container
+        .jumbotron.transparent
+          b
+            p
+              | We"ve been working over the past year or so to create a design language to base a Linux distro off of. In September 2015,
+              | we finally figured out our language. Now, we just need to implement it.
+      
+      #box1.container.jumbotron
+        .row
+          .col-sm-4
+            .card.slideDown
+              i.material-icons
+                | dashboard
+              .card-block
+                h4.card-title
+                  | Design.
+                p.card-text
+                  b
+                  | We"ve got our own design language. It is literally neon. Retrofuturistic as seen in sci-fi movies. And it"s implemented on top of Tux the Penguin.
+                br
+
+          .col-sm-4
+            .card.slideDown
+              i.material-icons
+                | done
+
+          .col-sm-4
+            .card.slideDown
+              i.material-icons
+                | lock_open
